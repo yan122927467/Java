@@ -39,7 +39,7 @@ public class CalculatorJFrame extends JFrame implements ActionListener {
         //网格布局
         this.setLayout(new GridLayout(8,1));
         //添加textfiled2 等式
-        jTextField2 = new JTextField(30);
+        jTextField2 = new JTextField();
         this.add(jTextField2);
         jTextField2.setEditable(false);
         //添加textfiled 显示答案

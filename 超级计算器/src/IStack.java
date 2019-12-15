@@ -88,7 +88,7 @@ public class IStack {
         }
 
         //最后没有以右括号结尾的表达式还得另外把剩下的符号处理完
-        if (!opStack.isEmpty()) {
+        while (!opStack.isEmpty()) {
             double b = numStack.pop();
             double a = numStack.pop();
             numStack.push(getAnswer(a, opStack.pop(), b));
